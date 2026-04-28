@@ -1,3 +1,3 @@
-# Live-Claw-Eval
+# LiveClawEval
 
-Public benchmark homepage for Live-Claw-Eval.
+Public benchmark homepage for LiveClawEval.
