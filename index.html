@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LiveClawBench: A Live Agent Benchmark for Evolving Real-World Workflow</title>
-  <meta name="description" content="LiveClawBench is a living benchmark for AI agent evaluation grounded in continuously updated real-world market signals from the ClawHub marketplace. 105 tasks across 15 families, 13 models evaluated, re-calibrated quarterly. An automated signal-to-task pipeline keeps the benchmark aligned with evolving enterprise workflow demand." />
-  <meta name="keywords" content="LiveClawBench, LiveClaw Bench, claw benchmark, claw eval, AI agent benchmark, ClawHub, agent evaluation, live benchmark, real-world benchmark, agent leaderboard, tool-use benchmark" />
-  <meta property="og:title" content="LiveClawBench: A Live Agent Benchmark for Evolving Real-World Workflow" />
-  <meta property="og:description" content="105 real-world tasks grounded in continuously updated ClawHub market signals. 13 models evaluated. Re-calibrated quarterly." />
+  <title>LiveClawEval: Seeking Alpha Tasks from Live Workflow Signals</title>
+  <meta name="description" content="LiveClawEval seeks alpha tasks from live workflow signals: 105 real-world tasks across 17 families, grounded in continuously updated ClawHub marketplace signals and evaluated across 13 frontier models." />
+  <meta name="keywords" content="LiveClawEval, LiveClaw Eval, claw benchmark, claw eval, AI agent benchmark, ClawHub, agent evaluation, live benchmark, real-world benchmark, agent leaderboard, tool-use benchmark" />
+  <meta property="og:title" content="LiveClawEval: Seeking Alpha Tasks from Live Workflow Signals" />
+  <meta property="og:description" content="Seeking alpha tasks from live workflow signals. 105 tasks, 17 families, 13 frontier models, re-calibrated quarterly." />
   <meta property="og:type" content="website" />
   <meta name="robots" content="index, follow" />
-  <meta name="author" content="LiveClawBench Team" />
+  <meta name="author" content="LiveClawEval Team" />
 
   <!-- JSON-LD Structured Data (SEO + GEO) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Dataset",
-    "name": "LiveClawBench",
-    "alternateName": ["LiveClaw Bench", "Live Claw Benchmark"],
-    "description": "LiveClawBench is a quarterly-updated AI agent benchmark comprising 105 real-world enterprise workflow tasks grounded in continuously updated ClawHub marketplace signals. It evaluates 13 frontier models across 15 task families using rule-based extraction and structured LLM judging with fully explainable scores. Unlike static benchmarks that freeze at publication, LiveClawBench re-ingests fresh marketplace signals every quarter and re-runs an automated signal-to-task pipeline to keep task distribution aligned with real-world demand.",
+    "name": "LiveClawEval",
+    "alternateName": ["Live Claw Eval", "LiveClawEval Benchmark"],
+    "description": "LiveClawEval seeks alpha tasks from live workflow signals. It is a quarterly-updated AI agent benchmark comprising 105 real-world enterprise workflow tasks grounded in continuously updated ClawHub marketplace signals, evaluated across 13 frontier models and 17 task families using deterministic checks plus structured LLM judging.",
     "url": "https://github.com/LiveClawEval/LiveClawEval",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "version": "1.0",
@@ -34,7 +34,7 @@
     ],
     "creator": {
       "@type": "Organization",
-      "name": "LiveClawBench Team"
+      "name": "LiveClawEval Team"
     },
     "distribution": {
       "@type": "DataDownload",
@@ -52,23 +52,23 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What is LiveClawBench?",
+        "name": "What is LiveClawEval?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "LiveClawBench is a living benchmark for evaluating AI agents on real-world enterprise workflows. The current release contains 105 tasks across 15 families, grounded in continuously updated ClawHub marketplace signals and refreshed quarterly."
+          "text": "LiveClawEval is a living benchmark for evaluating AI agents on real-world enterprise workflows. The current release contains 105 tasks across 17 families, grounded in continuously updated ClawHub marketplace signals and refreshed quarterly."
         }
       },
       {
         "@type": "Question",
-        "name": "How is LiveClawBench different from other AI benchmarks?",
+        "name": "How is LiveClawEval different from other AI benchmarks?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Most benchmarks freeze at publication and drift from real-world needs. LiveClawBench uses an automated signal-to-task pipeline that re-ingests ClawHub marketplace signals every quarter, re-clusters workflow patterns, and regenerates the task set. This ensures task distribution keeps tracking current market demand."
+          "text": "Most benchmarks freeze at publication and drift from real-world needs. LiveClawEval uses an automated signal-to-task pipeline that re-ingests ClawHub marketplace signals every quarter, re-clusters workflow patterns, and regenerates the task set. This ensures task distribution keeps tracking current market demand."
         }
       },
       {
         "@type": "Question",
-        "name": "How often is LiveClawBench updated?",
+        "name": "How often is LiveClawEval updated?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Every quarter (every 3 months). Each update re-runs the full automated pipeline on the latest ClawHub marketplace signals and produces a new version of the benchmark with updated task distribution and model evaluations."
@@ -76,7 +76,7 @@
       },
       {
         "@type": "Question",
-        "name": "How many models does LiveClawBench evaluate?",
+        "name": "How many models does LiveClawEval evaluate?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "The current version (v1.0, April 2026) evaluates 13 frontier models including Claude Opus 4.6, GPT-5.4, Claude Sonnet 4.6, GLM-5, MiniMax M2.7, Gemini 3.1 Pro, MiMo V2 Pro, Kimi K2.5, and others."
@@ -84,7 +84,7 @@
       },
       {
         "@type": "Question",
-        "name": "How are tasks scored in LiveClawBench?",
+        "name": "How are tasks scored in LiveClawEval?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Each task is scored 0.0-1.0 using rule-based extraction combined with structured LLM judging under explicit rubrics. Scores >= 0.80 count as PASS. The Overall Completion Score is the raw mean across all 105 tasks with no discount. Models are ranked primarily by Pass Rate, with Overall Completion Score as tiebreaker."
@@ -1030,7 +1030,7 @@
   <!-- Nav -->
   <nav class="nav">
     <div class="nav-left">
-      <a class="nav-logo" data-route="leaderboard">LiveClawBench</a>
+      <a class="nav-logo" data-route="leaderboard">LiveClawEval</a>
       <div class="nav-links">
         <a data-route="leaderboard">Leaderboard</a>
         <a data-route="tasks">Tasks</a>
@@ -1052,12 +1052,13 @@
 
     <!-- Hero -->
     <section class="card" style="padding:36px 32px;">
-      <h1 class="hero-title"><span>LiveClawBench</span>: A Live Agent Benchmark for<br>Evolving Real-World Workflow</h1>
+      <h1 class="hero-title"><span>LiveClawEval</span>: A Live Agent Benchmark for<br>Evolving Real-World Workflow</h1>
+      <p style="margin:12px 0 0;font-size:18px;color:var(--accent);font-weight:700;letter-spacing:-0.01em;">Seeking alpha tasks from live workflow signals.</p>
       <p class="lede">
         Task topics sourced from <strong>ClawHub marketplace signals</strong> &mdash;
         currently instantiated from a high-coverage top-skill snapshot by downloads &mdash;
         not synthetic prompts, but real enterprise workflow patterns that the market demands.
-        105 tasks across 15 families, scored with deterministic checks plus structured judging. <strong>Re-evaluated quarterly</strong> to stay aligned with evolving market needs.
+        105 tasks across 17 families, scored with deterministic checks plus structured judging. <strong>Re-evaluated quarterly</strong> to stay aligned with evolving market needs.
       </p>
       <div style="margin-top:16px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
         <span class="tag accent" style="font-size:12px;">Current: April 2026</span>
@@ -1298,7 +1299,7 @@
           </div>
         </div>
         <div class="gap-insight">
-          <strong>Key finding:</strong> LiveClawBench corrects this mismatch by aligning task distribution with real-world demand signals, re-calibrated every quarter.
+          <strong>Key finding:</strong> LiveClawEval corrects this mismatch by aligning task distribution with real-world demand signals, re-calibrated every quarter.
         </div>
       </div>
     </section>
@@ -1446,7 +1447,7 @@
       <div class="gap-insight">
         <strong>What this means:</strong> Workspace-Repair and Cross-Tool orchestration are gaining share every quarter as enterprises adopt more agent-driven workflows.
         A benchmark frozen in Q3 2025 would already under-represent these categories by ~7 percentage points.
-        LiveClawBench re-calibrates every quarter to stay aligned.
+        LiveClawEval re-calibrates every quarter to stay aligned.
       </div>
 
       <!-- Timeline -->
@@ -1457,7 +1458,7 @@
             <div class="step-rail-num" style="background:var(--accent);">&#10003;</div>
             <div class="step-rail-body">
               <h4>Q2 2026 &mdash; v1.0 (Current)</h4>
-              <p>105 tasks, 15 families, 13 models evaluated. Signal source: ClawHub skill-download snapshot as of April 2026.</p>
+              <p>105 tasks, 17 families, 13 models evaluated. Signal source: ClawHub skill-download snapshot as of April 2026.</p>
             </div>
           </div>
           <div class="step-rail-item">
@@ -1611,12 +1612,12 @@
       <h2>Frequently Asked Questions</h2>
       <div style="margin-top:16px;">
         <details style="margin-bottom:12px;border-bottom:1px solid var(--line);padding-bottom:12px;">
-          <summary style="cursor:pointer;font-weight:700;font-size:14px;color:var(--ink);">What is LiveClawBench?</summary>
-          <p style="margin-top:8px;font-size:13px;color:var(--muted);line-height:1.7;">LiveClawBench is a living benchmark for evaluating AI agents on real-world enterprise workflows. It contains 105 tasks across 15 families, grounded in continuously updated ClawHub marketplace signals. Unlike static benchmarks, it is re-calibrated quarterly using fresh marketplace signals.</p>
+          <summary style="cursor:pointer;font-weight:700;font-size:14px;color:var(--ink);">What is LiveClawEval?</summary>
+          <p style="margin-top:8px;font-size:13px;color:var(--muted);line-height:1.7;">LiveClawEval is a living benchmark for evaluating AI agents on real-world enterprise workflows. It contains 105 tasks across 17 families, grounded in continuously updated ClawHub marketplace signals. Unlike static benchmarks, it is re-calibrated quarterly using fresh marketplace signals.</p>
         </details>
         <details style="margin-bottom:12px;border-bottom:1px solid var(--line);padding-bottom:12px;">
           <summary style="cursor:pointer;font-weight:700;font-size:14px;color:var(--ink);">How is it different from other benchmarks?</summary>
-          <p style="margin-top:8px;font-size:13px;color:var(--muted);line-height:1.7;">Most benchmarks freeze at publication. LiveClawBench uses an automated signal-to-task pipeline that re-ingests ClawHub marketplace signals every quarter, ensuring task distribution always reflects current market demand. For example, Workspace-Repair represents 27% of our benchmark vs ~8% in traditional benchmarks.</p>
+          <p style="margin-top:8px;font-size:13px;color:var(--muted);line-height:1.7;">Most benchmarks freeze at publication. LiveClawEval uses an automated signal-to-task pipeline that re-ingests ClawHub marketplace signals every quarter, ensuring task distribution always reflects current market demand. For example, Workspace-Repair represents 27% of our benchmark vs ~8% in traditional benchmarks.</p>
         </details>
         <details style="margin-bottom:12px;border-bottom:1px solid var(--line);padding-bottom:12px;">
           <summary style="cursor:pointer;font-weight:700;font-size:14px;color:var(--ink);">How often is it updated?</summary>
@@ -1627,8 +1628,8 @@
           <p style="margin-top:8px;font-size:13px;color:var(--muted);line-height:1.7;">Each task is scored 0.0&ndash;1.0 using rule-based extraction combined with structured LLM judging under explicit rubrics. Scores &ge; 0.80 count as PASS. Overall Completion Score is the raw mean across all 105 tasks. Ranking: primary = Pass Rate, tiebreak = Overall Completion Score.</p>
         </details>
         <details style="margin-bottom:12px;">
-          <summary style="cursor:pointer;font-weight:700;font-size:14px;color:var(--ink);">What signals is LiveClawBench built from?</summary>
-          <p style="margin-top:8px;font-size:13px;color:var(--muted);line-height:1.7;">LiveClawBench is built from real-world ClawHub marketplace signals, primarily top skills ranked by downloads. The current release uses a top-500 snapshot to derive task families and weights, but the benchmark name itself is not tied to a fixed number.</p>
+          <summary style="cursor:pointer;font-weight:700;font-size:14px;color:var(--ink);">What signals is LiveClawEval built from?</summary>
+          <p style="margin-top:8px;font-size:13px;color:var(--muted);line-height:1.7;">LiveClawEval is built from real-world ClawHub marketplace signals, primarily top skills ranked by downloads. The current release uses a top-500 snapshot to derive task families and weights, but the benchmark name itself is not tied to a fixed number.</p>
         </details>
       </div>
     </section>
