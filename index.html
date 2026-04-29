@@ -281,68 +281,29 @@
     }
 
 
-    /* -- Hero two-column layout -- */
-    .hero-grid {
+    /* -- Hero glance strip (full-width, horizontal) -- */
+    .glance-strip {
+      margin-top: 22px;
+      padding-top: 18px;
+      border-top: 1px dashed rgba(18,106,90,0.18);
       display: grid;
-      grid-template-columns: minmax(0, 2.4fr) minmax(220px, 1fr);
-      gap: 24px;
-      align-items: start;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
     }
-    .hero-side {
-      display: flex; flex-direction: column; gap: 14px;
-    }
-    .hero-side .glance-card,
-    .hero-side .upstream-card {
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      background: var(--paper);
-      padding: 16px 18px;
-      box-shadow: 0 4px 12px rgba(41,29,17,0.04);
-    }
-    .glance-card .gc-eyebrow {
-      display: flex; align-items: center; gap: 6px;
-      font-size: 10px; letter-spacing: 0.14em;
-      text-transform: uppercase; color: var(--muted); font-weight: 700;
-      margin-bottom: 12px;
-    }
-    .glance-card .gc-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px;
-    }
-    .glance-card .gc-row {
+    .glance-strip .gs-item {
       display: flex; align-items: baseline; gap: 8px;
     }
-    .glance-card .gc-num {
+    .glance-strip .gs-num {
       font-family: Iowan Old Style, Palatino Linotype, serif;
-      font-size: 24px; font-weight: 800;
-      color: var(--accent); line-height: 1;
-      font-variant-numeric: tabular-nums;
+      font-size: 26px; font-weight: 800; color: var(--accent);
+      line-height: 1; font-variant-numeric: tabular-nums;
     }
-    .glance-card .gc-label {
-      font-size: 11px; letter-spacing: 0.06em;
+    .glance-strip .gs-label {
+      font-size: 11px; letter-spacing: 0.08em;
       text-transform: uppercase; color: var(--muted); font-weight: 700;
     }
-    .upstream-card {
-      display: flex; flex-direction: column; gap: 4px;
-    }
-    .upstream-card .uc-eyebrow {
-      font-size: 10px; letter-spacing: 0.14em;
-      text-transform: uppercase; color: var(--muted); font-weight: 700;
-    }
-    .upstream-card .uc-title {
-      font-family: Iowan Old Style, Palatino Linotype, serif;
-      font-size: 17px; font-weight: 700; color: var(--ink);
-    }
-    .upstream-card .uc-sub {
-      font-size: 12px; color: var(--muted); line-height: 1.55;
-    }
-    .upstream-card .uc-link {
-      margin-top: 6px; font-size: 13px; font-weight: 700;
-      color: var(--accent); text-decoration: none;
-      display: inline-flex; align-items: center; gap: 4px;
-    }
-    .upstream-card .uc-link:hover { text-decoration: underline; }
-    @media (max-width: 880px) {
-      .hero-grid { grid-template-columns: 1fr; }
+    @media (max-width: 768px) {
+      .glance-strip { grid-template-columns: repeat(2, 1fr); }
     }
 
     /* -- Stats row -- */
@@ -1165,44 +1126,35 @@
 
     <!-- Hero -->
     <section class="card" style="padding:36px 32px;">
-      <div class="hero-grid">
-        <div class="hero-main">
-          <h1 class="hero-title"><span>Claw-Eval-Live</span>: A Live Agent Benchmark for<br>Evolving Real-World Workflow</h1>
-          <p style="margin:12px 0 0;font-size:18px;color:var(--accent);font-weight:700;letter-spacing:-0.01em;">Seeking alpha tasks from live workflow signals.</p>
-          <p class="lede">
-            Task topics sourced from <strong>ClawHub marketplace signals</strong> &mdash;
-            currently instantiated from a high-coverage top-skill snapshot by downloads &mdash;
-            not synthetic prompts, but real enterprise workflow patterns that the market demands.
-            105 tasks across 17 families, scored with deterministic checks plus structured judging. <strong>Re-evaluated quarterly</strong> to stay aligned with evolving market needs.
-          </p>
-          <div style="margin-top:18px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
-            <span class="tag accent" style="font-size:12px;">Current: April 2026 &middot; v1.0</span>
-            <div class="countdown-card" id="countdown-card">
-              <div class="cc-title">
-                <span class="cc-eyebrow">&#9203; Live</span>
-                <span class="cc-label">Next refresh in</span>
-              </div>
-              <div class="cc-units">
-                <div class="cc-unit"><span class="cc-num" id="cd-days">--</span><span class="cc-suffix">days</span></div>
-                <span class="cc-sep">:</span>
-                <div class="cc-unit"><span class="cc-num" id="cd-hours">--</span><span class="cc-suffix">hrs</span></div>
-                <span class="cc-sep">:</span>
-                <div class="cc-unit"><span class="cc-num" id="cd-mins">--</span><span class="cc-suffix">min</span></div>
-              </div>
-            </div>
+      <h1 class="hero-title"><span>Claw-Eval-Live</span>: A Live Agent Benchmark for<br>Evolving Real-World Workflow</h1>
+      <p style="margin:12px 0 0;font-size:18px;color:var(--accent);font-weight:700;letter-spacing:-0.01em;">Seeking alpha tasks from live workflow signals.</p>
+      <p class="lede">
+        Task topics sourced from <strong>ClawHub marketplace signals</strong> &mdash;
+        currently instantiated from a high-coverage top-skill snapshot by downloads &mdash;
+        not synthetic prompts, but real enterprise workflow patterns that the market demands.
+        105 tasks across 17 families, scored with deterministic checks plus structured judging. <strong>Re-evaluated quarterly</strong> to stay aligned with evolving market needs.
+      </p>
+      <div style="margin-top:18px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+        <span class="tag accent" style="font-size:12px;">Current: April 2026 &middot; v1.0</span>
+        <div class="countdown-card" id="countdown-card">
+          <div class="cc-title">
+            <span class="cc-eyebrow">&#9203; Live</span>
+            <span class="cc-label">Next refresh in</span>
+          </div>
+          <div class="cc-units">
+            <div class="cc-unit"><span class="cc-num" id="cd-days">--</span><span class="cc-suffix">days</span></div>
+            <span class="cc-sep">:</span>
+            <div class="cc-unit"><span class="cc-num" id="cd-hours">--</span><span class="cc-suffix">hrs</span></div>
+            <span class="cc-sep">:</span>
+            <div class="cc-unit"><span class="cc-num" id="cd-mins">--</span><span class="cc-suffix">min</span></div>
           </div>
         </div>
-        <aside class="hero-side">
-          <div class="glance-card">
-            <div class="gc-eyebrow">&#128202; At a glance</div>
-            <div class="gc-grid">
-              <div class="gc-row"><span class="gc-num">105</span><span class="gc-label">Tasks</span></div>
-              <div class="gc-row"><span class="gc-num">17</span><span class="gc-label">Families</span></div>
-              <div class="gc-row"><span class="gc-num">13</span><span class="gc-label">Frontier Models</span></div>
-              <div class="gc-row"><span class="gc-num">Q</span><span class="gc-label">Quarterly Refresh</span></div>
-            </div>
-          </div>
-        </aside>
+      </div>
+      <div class="glance-strip">
+        <div class="gs-item"><span class="gs-num">105</span><span class="gs-label">Tasks</span></div>
+        <div class="gs-item"><span class="gs-num">17</span><span class="gs-label">Families</span></div>
+        <div class="gs-item"><span class="gs-num">13</span><span class="gs-label">Frontier Models</span></div>
+        <div class="gs-item"><span class="gs-num">Q</span><span class="gs-label">Quarterly Refresh</span></div>
       </div>
     </section>
 
