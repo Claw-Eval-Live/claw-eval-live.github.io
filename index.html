@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LiveClawEval: Seeking Alpha Tasks from Live Workflow Signals</title>
-  <meta name="description" content="LiveClawEval seeks alpha tasks from live workflow signals: 105 real-world tasks across 17 families, grounded in continuously updated ClawHub marketplace signals and evaluated across 13 frontier models." />
-  <meta name="keywords" content="LiveClawEval, LiveClaw Eval, claw benchmark, claw eval, AI agent benchmark, ClawHub, agent evaluation, live benchmark, real-world benchmark, agent leaderboard, tool-use benchmark" />
-  <meta property="og:title" content="LiveClawEval: Seeking Alpha Tasks from Live Workflow Signals" />
+  <title>Claw-Eval-Live: Seeking Alpha Tasks from Live Workflow Signals</title>
+  <meta name="description" content="Claw-Eval-Live seeks alpha tasks from live workflow signals: 105 real-world tasks across 17 families, grounded in continuously updated ClawHub marketplace signals and evaluated across 13 frontier models." />
+  <meta name="keywords" content="Claw-Eval-Live, Claw-Eval-Live, claw benchmark, claw eval, AI agent benchmark, ClawHub, agent evaluation, live benchmark, real-world benchmark, agent leaderboard, tool-use benchmark" />
+  <meta property="og:title" content="Claw-Eval-Live: Seeking Alpha Tasks from Live Workflow Signals" />
   <meta property="og:description" content="Seeking alpha tasks from live workflow signals. 105 tasks, 17 families, 13 frontier models, re-calibrated quarterly." />
   <meta property="og:type" content="website" />
   <meta name="robots" content="index, follow" />
-  <meta name="author" content="LiveClawEval Team" />
+  <meta name="author" content="Claw-Eval-Live Team" />
 
   <!-- JSON-LD Structured Data (SEO + GEO) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Dataset",
-    "name": "LiveClawEval",
-    "alternateName": ["Live Claw Eval", "LiveClawEval Benchmark"],
-    "description": "LiveClawEval seeks alpha tasks from live workflow signals. It is a quarterly-updated AI agent benchmark comprising 105 real-world enterprise workflow tasks grounded in continuously updated ClawHub marketplace signals, evaluated across 13 frontier models and 17 task families using deterministic checks plus structured LLM judging.",
+    "name": "Claw-Eval-Live",
+    "alternateName": ["Live Claw Eval", "Claw-Eval-Live Benchmark"],
+    "description": "Claw-Eval-Live seeks alpha tasks from live workflow signals. It is a quarterly-updated AI agent benchmark comprising 105 real-world enterprise workflow tasks grounded in continuously updated ClawHub marketplace signals, evaluated across 13 frontier models and 17 task families using deterministic checks plus structured LLM judging.",
     "url": "https://github.com/LiveClawEval/LiveClawEval",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "version": "1.0",
@@ -34,7 +34,7 @@
     ],
     "creator": {
       "@type": "Organization",
-      "name": "LiveClawEval Team"
+      "name": "Claw-Eval-Live Team"
     },
     "distribution": {
       "@type": "DataDownload",
@@ -52,23 +52,23 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What is LiveClawEval?",
+        "name": "What is Claw-Eval-Live?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "LiveClawEval is a living benchmark for evaluating AI agents on real-world enterprise workflows. The current release contains 105 tasks across 17 families, grounded in continuously updated ClawHub marketplace signals and refreshed quarterly."
+          "text": "Claw-Eval-Live is a living benchmark for evaluating AI agents on real-world enterprise workflows. The current release contains 105 tasks across 17 families, grounded in continuously updated ClawHub marketplace signals and refreshed quarterly."
         }
       },
       {
         "@type": "Question",
-        "name": "How is LiveClawEval different from other AI benchmarks?",
+        "name": "How is Claw-Eval-Live different from other AI benchmarks?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Most benchmarks freeze at publication and drift from real-world needs. LiveClawEval uses an automated signal-to-task pipeline that re-ingests ClawHub marketplace signals every quarter, re-clusters workflow patterns, and regenerates the task set. This ensures task distribution keeps tracking current market demand."
+          "text": "Most benchmarks freeze at publication and drift from real-world needs. Claw-Eval-Live uses an automated signal-to-task pipeline that re-ingests ClawHub marketplace signals every quarter, re-clusters workflow patterns, and regenerates the task set. This ensures task distribution keeps tracking current market demand."
         }
       },
       {
         "@type": "Question",
-        "name": "How often is LiveClawEval updated?",
+        "name": "How often is Claw-Eval-Live updated?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Every quarter (every 3 months). Each update re-runs the full automated pipeline on the latest ClawHub marketplace signals and produces a new version of the benchmark with updated task distribution and model evaluations."
@@ -76,7 +76,7 @@
       },
       {
         "@type": "Question",
-        "name": "How many models does LiveClawEval evaluate?",
+        "name": "How many models does Claw-Eval-Live evaluate?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "The current version (v1.0, April 2026) evaluates 13 frontier models including Claude Opus 4.6, GPT-5.4, Claude Sonnet 4.6, GLM-5, MiniMax M2.7, Gemini 3.1 Pro, MiMo V2 Pro, Kimi K2.5, and others."
@@ -84,7 +84,7 @@
       },
       {
         "@type": "Question",
-        "name": "How are tasks scored in LiveClawEval?",
+        "name": "How are tasks scored in Claw-Eval-Live?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Each task is scored 0.0-1.0 using rule-based extraction combined with structured LLM judging under explicit rubrics. Scores >= 0.80 count as PASS. The Overall Completion Score is the raw mean across all 105 tasks with no discount. Models are ranked primarily by Pass Rate, with Overall Completion Score as tiebreaker."
@@ -231,6 +231,54 @@
     .countdown-bar .cd-icon { font-size: 18px; }
     .countdown-bar .cd-label { font-weight: 600; color: var(--ink); }
     .countdown-bar .cd-time { font-weight: 800; color: var(--accent); font-variant-numeric: tabular-nums; }
+
+
+    /* -- Countdown big card -- */
+    .countdown-card {
+      display: inline-flex;
+      align-items: stretch;
+      gap: 0;
+      padding: 0;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(18,106,90,0.10), rgba(18,106,90,0.04));
+      border: 1px solid rgba(18,106,90,0.20);
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(18,106,90,0.10);
+    }
+    .countdown-card .cc-title {
+      display: flex; flex-direction: column; justify-content: center;
+      padding: 10px 14px;
+      background: rgba(18,106,90,0.08);
+      border-right: 1px solid rgba(18,106,90,0.15);
+    }
+    .countdown-card .cc-title .cc-eyebrow {
+      font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--muted); font-weight: 700;
+    }
+    .countdown-card .cc-title .cc-label {
+      font-size: 13px; font-weight: 700; color: var(--ink); margin-top: 2px;
+    }
+    .countdown-card .cc-units {
+      display: flex; align-items: center; gap: 6px;
+      padding: 8px 14px;
+    }
+    .countdown-card .cc-unit {
+      display: flex; flex-direction: column; align-items: center;
+      min-width: 46px;
+    }
+    .countdown-card .cc-num {
+      font-family: Iowan Old Style, Palatino Linotype, serif;
+      font-size: 26px; font-weight: 800; color: var(--accent);
+      line-height: 1; font-variant-numeric: tabular-nums;
+    }
+    .countdown-card .cc-suffix {
+      font-size: 10px; color: var(--muted); margin-top: 4px;
+      letter-spacing: 0.06em; text-transform: uppercase; font-weight: 700;
+    }
+    .countdown-card .cc-sep {
+      font-size: 22px; color: rgba(18,106,90,0.35); font-weight: 800;
+      transform: translateY(-4px);
+    }
 
     /* -- Stats row -- */
     .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 24px; }
@@ -1030,7 +1078,7 @@
   <!-- Nav -->
   <nav class="nav">
     <div class="nav-left">
-      <a class="nav-logo" data-route="leaderboard">LiveClawEval</a>
+      <a class="nav-logo" data-route="leaderboard">Claw-Eval-Live</a>
       <div class="nav-links">
         <a data-route="leaderboard">Leaderboard</a>
         <a data-route="tasks">Tasks</a>
@@ -1052,7 +1100,7 @@
 
     <!-- Hero -->
     <section class="card" style="padding:36px 32px;">
-      <h1 class="hero-title"><span>LiveClawEval</span>: A Live Agent Benchmark for<br>Evolving Real-World Workflow</h1>
+      <h1 class="hero-title"><span>Claw-Eval-Live</span>: A Live Agent Benchmark for<br>Evolving Real-World Workflow</h1>
       <p style="margin:12px 0 0;font-size:18px;color:var(--accent);font-weight:700;letter-spacing:-0.01em;">Seeking alpha tasks from live workflow signals.</p>
       <p class="lede">
         Task topics sourced from <strong>ClawHub marketplace signals</strong> &mdash;
@@ -1060,12 +1108,20 @@
         not synthetic prompts, but real enterprise workflow patterns that the market demands.
         105 tasks across 17 families, scored with deterministic checks plus structured judging. <strong>Re-evaluated quarterly</strong> to stay aligned with evolving market needs.
       </p>
-      <div style="margin-top:16px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
-        <span class="tag accent" style="font-size:12px;">Current: April 2026</span>
-        <div class="countdown-bar">
-          <span class="cd-icon">&#9203;</span>
-          <span class="cd-label">Next update:</span>
-          <span class="cd-time" id="countdown-timer">--</span>
+      <div style="margin-top:18px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+        <span class="tag accent" style="font-size:12px;">Current: April 2026 &middot; v1.0</span>
+        <div class="countdown-card" id="countdown-card">
+          <div class="cc-title">
+            <span class="cc-eyebrow">&#9203; Live</span>
+            <span class="cc-label">Next refresh in</span>
+          </div>
+          <div class="cc-units">
+            <div class="cc-unit"><span class="cc-num" id="cd-days">--</span><span class="cc-suffix">days</span></div>
+            <span class="cc-sep">:</span>
+            <div class="cc-unit"><span class="cc-num" id="cd-hours">--</span><span class="cc-suffix">hrs</span></div>
+            <span class="cc-sep">:</span>
+            <div class="cc-unit"><span class="cc-num" id="cd-mins">--</span><span class="cc-suffix">min</span></div>
+          </div>
         </div>
       </div>
     </section>
@@ -1088,47 +1144,12 @@
         <div class="rt-node">
           <div class="rt-dot rt-dot-future"></div>
           <div class="rt-label">v1.1</div>
-          <div class="rt-sub">Jul 2026</div>
-          <div class="rt-sub">Updated tasks from real-world signals</div>
+          <div class="rt-sub">Next quarter</div>
+          <div class="rt-sub">Re-ingested ClawHub signals &middot; refreshed task set</div>
           <span class="rt-tag rt-tag-next">NEXT</span>
         </div>
-        <div class="rt-node">
-          <div class="rt-dot rt-dot-future"></div>
-          <div class="rt-label">v1.2</div>
-          <div class="rt-sub">Oct 2026</div>
-          <div class="rt-sub">Updated tasks from real-world signals</div>
-        </div>
-        <div class="rt-node">
-          <div class="rt-dot rt-dot-future"></div>
-          <div class="rt-label">v1.3</div>
-          <div class="rt-sub">Jan 2027</div>
-          <div class="rt-sub">Updated tasks from real-world signals</div>
-        </div>
-        <div class="rt-node">
-          <div class="rt-dot rt-dot-future"></div>
-          <div class="rt-label">v2.0</div>
-          <div class="rt-sub">Apr 2027</div>
-          <div class="rt-sub">Updated tasks from real-world signals</div>
-        </div>
-        <div class="rt-node">
-          <div class="rt-dot rt-dot-future"></div>
-          <div class="rt-label">v2.1</div>
-          <div class="rt-sub">Jul 2027</div>
-          <div class="rt-sub">Updated tasks from real-world signals</div>
-        </div>
-        <div class="rt-node">
-          <div class="rt-dot rt-dot-future"></div>
-          <div class="rt-label">v2.2</div>
-          <div class="rt-sub">Oct 2027</div>
-          <div class="rt-sub">Updated tasks from real-world signals</div>
-        </div>
-        <div class="rt-node">
-          <div class="rt-dot rt-dot-future"></div>
-          <div class="rt-label">v2.3</div>
-          <div class="rt-sub">Jan 2028</div>
-          <div class="rt-sub">Updated tasks from real-world signals</div>
-        </div>
       </div>
+      <p style="margin:10px 2px 0;font-size:12px;color:var(--muted);">Future versions follow a quarterly cadence as marketplace signals evolve. Specific dates are intentionally not pre-committed.</p>
     </section>
 
     <!-- Leaderboard table -->
@@ -1299,7 +1320,7 @@
           </div>
         </div>
         <div class="gap-insight">
-          <strong>Key finding:</strong> LiveClawEval corrects this mismatch by aligning task distribution with real-world demand signals, re-calibrated every quarter.
+          <strong>Key finding:</strong> Claw-Eval-Live corrects this mismatch by aligning task distribution with real-world demand signals, re-calibrated every quarter.
         </div>
       </div>
     </section>
@@ -1447,7 +1468,7 @@
       <div class="gap-insight">
         <strong>What this means:</strong> Workspace-Repair and Cross-Tool orchestration are gaining share every quarter as enterprises adopt more agent-driven workflows.
         A benchmark frozen in Q3 2025 would already under-represent these categories by ~7 percentage points.
-        LiveClawEval re-calibrates every quarter to stay aligned.
+        Claw-Eval-Live re-calibrates every quarter to stay aligned.
       </div>
 
       <!-- Timeline -->
@@ -1612,12 +1633,12 @@
       <h2>Frequently Asked Questions</h2>
       <div style="margin-top:16px;">
         <details style="margin-bottom:12px;border-bottom:1px solid var(--line);padding-bottom:12px;">
-          <summary style="cursor:pointer;font-weight:700;font-size:14px;color:var(--ink);">What is LiveClawEval?</summary>
-          <p style="margin-top:8px;font-size:13px;color:var(--muted);line-height:1.7;">LiveClawEval is a living benchmark for evaluating AI agents on real-world enterprise workflows. It contains 105 tasks across 17 families, grounded in continuously updated ClawHub marketplace signals. Unlike static benchmarks, it is re-calibrated quarterly using fresh marketplace signals.</p>
+          <summary style="cursor:pointer;font-weight:700;font-size:14px;color:var(--ink);">What is Claw-Eval-Live?</summary>
+          <p style="margin-top:8px;font-size:13px;color:var(--muted);line-height:1.7;">Claw-Eval-Live is a living benchmark for evaluating AI agents on real-world enterprise workflows. It contains 105 tasks across 17 families, grounded in continuously updated ClawHub marketplace signals. Unlike static benchmarks, it is re-calibrated quarterly using fresh marketplace signals.</p>
         </details>
         <details style="margin-bottom:12px;border-bottom:1px solid var(--line);padding-bottom:12px;">
           <summary style="cursor:pointer;font-weight:700;font-size:14px;color:var(--ink);">How is it different from other benchmarks?</summary>
-          <p style="margin-top:8px;font-size:13px;color:var(--muted);line-height:1.7;">Most benchmarks freeze at publication. LiveClawEval uses an automated signal-to-task pipeline that re-ingests ClawHub marketplace signals every quarter, ensuring task distribution always reflects current market demand. For example, Workspace-Repair represents 27% of our benchmark vs ~8% in traditional benchmarks.</p>
+          <p style="margin-top:8px;font-size:13px;color:var(--muted);line-height:1.7;">Most benchmarks freeze at publication. Claw-Eval-Live uses an automated signal-to-task pipeline that re-ingests ClawHub marketplace signals every quarter, ensuring task distribution always reflects current market demand. For example, Workspace-Repair represents 27% of our benchmark vs ~8% in traditional benchmarks.</p>
         </details>
         <details style="margin-bottom:12px;border-bottom:1px solid var(--line);padding-bottom:12px;">
           <summary style="cursor:pointer;font-weight:700;font-size:14px;color:var(--ink);">How often is it updated?</summary>
@@ -1628,8 +1649,8 @@
           <p style="margin-top:8px;font-size:13px;color:var(--muted);line-height:1.7;">Each task is scored 0.0&ndash;1.0 using rule-based extraction combined with structured LLM judging under explicit rubrics. Scores &ge; 0.80 count as PASS. Overall Completion Score is the raw mean across all 105 tasks. Ranking: primary = Pass Rate, tiebreak = Overall Completion Score.</p>
         </details>
         <details style="margin-bottom:12px;">
-          <summary style="cursor:pointer;font-weight:700;font-size:14px;color:var(--ink);">What signals is LiveClawEval built from?</summary>
-          <p style="margin-top:8px;font-size:13px;color:var(--muted);line-height:1.7;">LiveClawEval is built from real-world ClawHub marketplace signals, primarily top skills ranked by downloads. The current release uses a top-500 snapshot to derive task families and weights, but the benchmark name itself is not tied to a fixed number.</p>
+          <summary style="cursor:pointer;font-weight:700;font-size:14px;color:var(--ink);">What signals is Claw-Eval-Live built from?</summary>
+          <p style="margin-top:8px;font-size:13px;color:var(--muted);line-height:1.7;">Claw-Eval-Live is built from real-world ClawHub marketplace signals, primarily top skills ranked by downloads. The current release uses a top-500 snapshot to derive task families and weights, but the benchmark name itself is not tied to a fixed number.</p>
         </details>
       </div>
     </section>
@@ -1685,18 +1706,24 @@ navigateTo(initRoute);
 // COUNTDOWN to next update (Q2 2026 = June 1, 2026)
 // ══════════════════════════════════════════════════
 (function countdown() {
-  const target = new Date("2026-06-01T00:00:00").getTime();
-  const el = document.getElementById("countdown-timer");
+  const target = new Date("2026-07-01T00:00:00").getTime();
+  const dEl = document.getElementById("cd-days");
+  const hEl = document.getElementById("cd-hours");
+  const mEl = document.getElementById("cd-mins");
+  if (!dEl || !hEl || !mEl) return;
+  const pad = n => String(n).padStart(2, "0");
   function tick() {
-    const now = Date.now();
-    const diff = target - now;
-    if (diff <= 0) { el.textContent = "Imminent"; return; }
+    const diff = target - Date.now();
+    if (diff <= 0) { dEl.textContent = "00"; hEl.textContent = "00"; mEl.textContent = "00"; return; }
     const d = Math.floor(diff / 86400000);
     const h = Math.floor((diff % 86400000) / 3600000);
-    el.textContent = d + "d " + h + "h";
+    const m = Math.floor((diff % 3600000) / 60000);
+    dEl.textContent = pad(d);
+    hEl.textContent = pad(h);
+    mEl.textContent = pad(m);
   }
   tick();
-  setInterval(tick, 60000);
+  setInterval(tick, 30000);
 })();
 
 // ══════════════════════════════════════════════════
